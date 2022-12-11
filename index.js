@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById("buy-ticket");
 
     let soldBtn = document.createElement("div");
+    soldBtn.innerHTML = `<button class= "sold-out">Sold Out</button>`;
 
     
         
