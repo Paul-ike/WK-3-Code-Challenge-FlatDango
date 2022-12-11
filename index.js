@@ -34,6 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 ticket.innerText = remainingTickets;
 
 
+            btn.addEventListener('click', () => {
+                if (remainingTickets > 0) {
+                    remainingTickets -= 1;
+                    ticket.innerText = remainingTickets;
+                } else {
+                     btn.replaceWith(soldBtn);   
+                }      
+                    
+            })
+
             
     })
 
