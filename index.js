@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 
             
-            let titleEl = document.querySelectorAll('.film');
-            for (let index = 0; index < titleEl.length; index++) {
-                let el = titleEl[index];         
+            let titleElement = document.getElementsByClassName('film');
+            for (let index = 0; index < titleElement.length; index++) {
+                let element = titleElement[index];         
                 
-                el.addEventListener('click', () =>{
+                element.addEventListener('click', () =>{
                     
                     img.src = `${data[index].poster}`;
                     title.innerText = `${data[index].title}`;
@@ -70,8 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ticket.innerText = remainingTickets;
 
                    
-                let buyTicket = document.querySelector('#buy-ticket');
-                buyTicket.addEventListener('click', () => {
+                btn.addEventListener('click', () => {
                      soldBtn.replaceWith(btn);  
                     if (remainingTickets > 0) {
                         remainingTickets -= 1;
