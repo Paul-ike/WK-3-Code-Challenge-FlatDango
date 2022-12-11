@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     movieTitle.style.cursor = 'pointer';
     const btn = document.getElementById("buy-ticket");
 
-     
+    let soldBtn = document.createElement("div");
 
     
         
