@@ -44,6 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     
             })
 
+            data.forEach(data =>{
+                movieTitle.insertAdjacentHTML('beforeend', `<li class="film item">${data.title}</li>`);
+                
+            });
+
+
+                
+            
             
     })
 
