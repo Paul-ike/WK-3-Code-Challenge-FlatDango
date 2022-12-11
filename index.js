@@ -52,7 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 
             
-            
+            let titleElement = document.getElementsByClassName('film');
+            for (let index = 0; index < titleElement.length; index++) {
+                let element = titleElement[index];         
+                
+                element.addEventListener('click', () =>{
+                    
+                    img.src = `${data[index].poster}`;
+                    title.innerText = `${data[index].title}`;
+                    runtime.innerText = `${data[index].runtime} minutes`;
+                    description.innerText = `${data[index].description}`;
+                    showtime.innerText = `${data[index].showtime}`;
+                        let capacity = `${data[index].capacity}` 
+                        let ticketsSold = `${data[index].tickets_sold}`
+                        let remainingTickets = +capacity - +ticketsSold;
+                    ticket.innerText = remainingTickets;
+
+                   
+                btn.addEventListener('click', () => {
+                     soldBtn.replaceWith(btn);  
+                    if (remainingTickets > 0) {
+                        remainingTickets -= 1;
+                        ticket.innerText = remainingTickets;
+                    } else {
+                     
+                        btn.replaceWith(soldBtn);   
+                    }      
+                    
+                })
+            })
+        }
     })
 
 });
