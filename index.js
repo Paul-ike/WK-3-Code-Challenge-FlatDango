@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     soldBtn.innerHTML = `<button class= "sold-out">Sold Out</button>`;
 
     
-        
+        fetch('http://localhost:3000/films')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            
+    })
 
 });
