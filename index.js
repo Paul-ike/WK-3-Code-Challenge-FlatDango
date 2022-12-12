@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     remainingTickets -= 1;
                     ticket.innerText = remainingTickets;
                 } else {
-                     btn.replaceWith(soldBtn);   
+                    btn.replaceWith(soldBtn);
                 }      
                     
             })
@@ -70,13 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                    
                 btn.addEventListener('click', () => {
-                     soldBtn.replaceWith(btn);  
                     if (remainingTickets > 0) {
                         remainingTickets -= 1;
                         ticket.innerText = remainingTickets;
                     } else {
                      
-                        btn.replaceWith(soldBtn);   
+                        btn.replaceWith(soldBtn);
                     }      
                     
                 })
