@@ -36,7 +36,7 @@ As a user should;
     Email: paulnyoiken@gmail.com
     Phone: +254718741382
 #### License and Copyright Information
-Copyright 2021 Paul Wanyoike Ngugi Licensed under[MT License]()
+Copyright 2021 Paul Wanyoike Ngugi Licensed under[MT License]('https://github.com/Paul-ike/WK-3-Code-Challenge-FlatDango/blob/main/LICENSE')
 
 
 ![Screenshot](./1.jpeg)
